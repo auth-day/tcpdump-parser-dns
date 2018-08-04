@@ -24,7 +24,16 @@ summ_of_each = {"A":0,"NS":0,"CNAME":0,"SOA":0,"NULL":0,"PTR":0,"HINFO":0,"MX":0
 
 number_of_request = 0
 
-f = open('dump')
+if len(sys.argv) < 2:
+  print("")
+  print("Usage:")
+  print("Paste an argument with absolute path to tcpdump output in bin format\n") 
+  print("Example: tcpdump -v udp port 53 -i enp2s0 -w /opt/dump.pcap" )
+  print("python parser.py /opt/dump.pcap")
+  print("")
+  exit()
+
+f = open(sys.argv[1])
 pcap = dpkt.pcap.Reader(f)
 
 for ts, buf in pcap: 
