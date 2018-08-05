@@ -47,12 +47,12 @@ for ts, buf in pcap:
     if an.type is not None: 
       summ_of_each[codes[an.type]] += 1
 
-print "\n"
+print ('\n')
 for key, value in summ_of_each.items():
   print('Request {}\t has {}\t of request(s)'.format(key,value))
 
 
-print ""
-print "######################################"
-print ""
-print "The whole number of all types of request: ", number_of_request
+print ("")
+print ("######################################")
+print ("")
+print ("The whole number of all types of request: ", number_of_request)
