@@ -10,7 +10,7 @@ node {
 
     stage('Build image') {
 
-        app = docker.build("tcpdump-parser")
+        app = docker.build("diboan/tcpdump-parser")
     }
 
     stage('Push image') {
