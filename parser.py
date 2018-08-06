@@ -56,4 +56,4 @@ print ("")
 print ("######################################")
 print ("")
 print ("The whole number of all types of request: ", number_of_request)
-###
+####
