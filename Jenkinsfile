@@ -10,7 +10,7 @@ node {
 
     stage('Build image') {
 
-        app = docker.build("getintodevops/hellonode")
+        app = docker.build("tcpdump-parser")
     }
 
     stage('Push image') {
