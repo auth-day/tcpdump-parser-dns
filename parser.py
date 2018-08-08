@@ -5,7 +5,7 @@ import sys
 import dpkt
 import socket, random
 
-# RR types #
+# RR types ##
 A = 0
 NS = 0
 CNAME = 0
